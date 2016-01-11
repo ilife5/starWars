@@ -4,6 +4,7 @@ Pace.on("done", function() {
         timer_step1;
 
     $("#wrap").show();
+    $("#pager").show();
 
     var myslider=new iSlider({
         wrap:'#wrap',
