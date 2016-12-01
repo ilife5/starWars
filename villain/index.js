@@ -18,7 +18,7 @@ $(function() {
     myAuto.play();
 
     $.ajax({
-        url: "http://www.xiao5market.com/api/jsConfig",
+        url: "http://api.xiao5market.com/api/jsConfig",
         dataType: "jsonp",
         success: function(wxConfig) {
             console.log("success", wxConfig);
