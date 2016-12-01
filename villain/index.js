@@ -16,4 +16,13 @@ Pace.on("done", function() {
 $(function() {
     var myAuto = document.getElementById('myaudio');
     myAuto.play();
+
+    $.ajax({
+        url: "http://www.xiao5market.com/api/jsConfig",
+        dataType: "jsonp",
+        success: function(wxConfig) {
+            console.log("success", wxConfig);
+            wx.config(wxConfig);
+        }
+    });
 });
