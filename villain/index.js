@@ -18,8 +18,12 @@ $(function() {
     myAuto.play();
 
     $.ajax({
-        url: "http://api.xiao5market.com/api/jsConfig?url=" + encodeURIComponent(location.href),
+        url: "https://ljspread.hongdianfund.com/wxShare",
         dataType: "jsonp",
+        data: {
+            channel: "muffin",
+            showUrl: encodeURIComponent(location.href)
+        },
         success: function(wxConfig) {
             console.log("success", wxConfig);
             wx.config(wxConfig);
