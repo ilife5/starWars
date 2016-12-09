@@ -22,7 +22,7 @@ $(function() {
         dataType: "jsonp",
         data: {
             channel: "muffin",
-            showUrl: encodeURIComponent(location.href)
+            showUrl: location.href
         },
         success: function(wxConfig) {
             console.log("success", wxConfig);
