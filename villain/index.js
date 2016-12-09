@@ -25,10 +25,7 @@ $(function() {
             showUrl: location.href
         },
         success: function(wxConfig) {
-            console.log("success", wxConfig);
             var config = JSON.parse(wxConfig.content);
-            console.log("config : + === ", config);
-            config.debug = true;
             wx.config(config);
 
             wx.ready(function(){
